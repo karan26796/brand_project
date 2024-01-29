@@ -12,9 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Store brand data
 let brands = [];
 
-// Serve static files (HTML, CSS, JS)
-app.use(express.static(path.join(__dirname, 'public')));
-
 // Routes
 app.get('/brands', (req, res) => {
     res.json(brands);
